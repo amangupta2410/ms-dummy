@@ -19,7 +19,7 @@ public class DummyControllerV1 {
     @GetMapping("get")
     public String testGet(@RequestParam(required = false, defaultValue = "Hello World!") String message){
         logger.info("API url, /dummy/v1/get called, with message {} ",message);
-        return message;
+        return message+" from the dummy";
     }
 
 }
